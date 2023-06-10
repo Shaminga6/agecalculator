@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="displaySection">
+      <div class="calculatorCase">
+        <div id="inputSection">
+          <div class="container">
+            <label for="day" id="dayTitle">DAY</label>
+            <input type="number" placeholder="DD" id="day" class="inputStyle" />
+            <div class="errorCase">
+              <span id="dayError" class="error">Must be a valid day</span>
+            </div>
+          </div>
+
+          <div class="container">
+            <label for="month" id="monthTitle">MONTH</label>
+            <input
+              type="number"
+              placeholder="MM"
+              id="month"
+              class="inputStyle"
+            />
+            <span id="monthError" class="error">Must be a valid Month</span>
+          </div>
+
+          <div class="container">
+            <label for="year" id="yearTitle">YEAR</label>
+            <input
+              type="number"
+              placeholder="YYYY"
+              id="year"
+              class="inputStyle"
+            />
+            <span id="yearError" class="error">Must be in the past</span>
+          </div>
+        </div>
+
+        <!--================================================================= -->
+
+        <section id="dividerSection">
+          <div class="col"><hr /></div>
+          <div class="col2"><button id="calculateBtn">&downarrow;</button></div>
+        </section>
+
+        <!--================================================================= -->
+
+        <section id="dataSection">
+          <div class="wrapper">
+            <div class="line-wrapper">
+              <div id="yearData" class="data"></div>
+              <div class="line emptyData"></div>
+              <div class="line emptyData"></div>
+            </div>
+
+            <h1 id="dataTitle">Years</h1>
+          </div>
+
+          <div class="wrapper">
+            <div class="line-wrapper">
+              <div id="monthData" class="data"></div>
+              <div class="line emptyData"></div>
+              <div class="line emptyData"></div>
+            </div>
+            <h1 id="dataTitle">Months</h1>
+          </div>
+
+          <div class="wrapper">
+            <div class="line-wrapper">
+              <div id="dayData" class="data"></div>
+              <div class="line emptyData"></div>
+              <div class="line emptyData"></div>
+            </div>
+            <h1 id="dataTitle">Days</h1>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
